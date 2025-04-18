@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Palanquin:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Palanquin:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --background-hero: url("./assets/images/collection-background.svg");
+  --background-card: url("./assets/images/thumbnail-background.svg");
+
+  --font-palanquin: "Palanquin", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --font-display: "Satoshi", sans-serif;
+
+  --color-primary: #eceeff;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
+  --color-white-400: rgba(255, 255, 255, 0.8);
+
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  --breakpoint-wide: 90rem; /* 1440px */
+  --breakpoint-3xl: 120rem; /* 1920px */
+
+  --font-size-xs: 12px;
+  --leading-xs: 16px;
+
+  --font-size-sm: 14px;
+  --leading-sm: 20px;
+
+  --font-size-base: 16px;
+  --leading-base: 19.5px;
+
+  --font-size-lg: 18px;
+  --leading-lg: 21.94px;
+
+  --font-size-xl: 20px;
+  --leading-xl: 24.38px;
+
+  --font-size-2xl: 24px;
+  --leading-2xl: 29.26px;
+
+  --font-size-3xl: 28px;
+  --leading-3xl: 50px;
+
+  --font-size-4xl: 48px;
+  --leading-4xl: 58px;
+
+  --font-size-8xl: 96px;
+  --leading-8xl: 106px;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .bg-card {
+    background-image: var(--background-card);
+  }
+
+  .bg-hero {
+    background-image: var(--background-hero);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .border-coral-red {
+    border-color: var(--color-coral-red);
+  }
+
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
