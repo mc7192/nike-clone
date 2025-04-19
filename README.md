@@ -1,6 +1,6 @@
 # Nike Website Clone
 
-This project is used to demonstrate my understanding of React.js and Tailwind CSS. The tutorial can be found on JavaScript Mastery's Youtube Channel [Here]((https://www.youtube.com/watch?v=tS7upsfuxmo)). A products page was added for additional challenge, as well as making the home button functional.
+This project is used to demonstrate my understanding of React.js and Tailwind CSS. The tutorial can be found on JavaScript Mastery's Youtube Channel [Here](https://www.youtube.com/watch?v=tS7upsfuxmo). A products page was added for additional challenge, as well as making the home button functional.
 
 ![screenshot](products.png)
 
