@@ -19,7 +19,7 @@ This project is used to demonstrate my understanding of React.js and Tailwind CS
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/nike-website.git
+   git clone https://github.com/mc7192/nike-clone.git
    ```
 
 2. Install dependencies
